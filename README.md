@@ -1,1 +1,1 @@
-# my_rc
+my Linux bashrc/vimrc/tmux setting
