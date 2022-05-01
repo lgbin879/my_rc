@@ -70,12 +70,6 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-"let g:UltiSnipsExpandTrigger = "<tab>"
-"let g:UltiSnipsListSnippets = "<c-tab>"
-"let g:UltiSnipsJumpForwardTrigger = "<tab>"
-"let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-"let g:UltiSnipsSnippetDirectories=[$HOME . "/.vim/UltiSnips"]
-
 "cscope setting
 "set cscopequickfix=s-,c-,d-,i-,t-,e-
 if has("cscope")
@@ -170,3 +164,23 @@ nmap <C-W> <plug>NERDCommenterToggle
 " Visual模式下执行命令，会对选中的特定区块进行注释/反注释
 " ,c<space>  加上/解开注释, 智能判断
 " ,cy   先复制, 再注解(p可以进行黏贴)
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+"==============================================================================
+" 插件配置
+"==============================================================================
+
+" 插件开始的位置
+call plug#begin('~/.vim/plugged')
+
+" 下面两个插件要配合使用，可以自动生成代码块
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+" 插件结束的位置，插件全部放在此行上面
+call plug#end()
+
