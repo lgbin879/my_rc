@@ -1,4 +1,6 @@
 # .bashrc
+# For blesh Add this lines at the top of .bashrc:
+[[ $- == *i*  ]] && source ~/.vim/ble.sh --noattach
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -70,10 +72,9 @@ if [[ $- =~ i  ]]; then
 # 自動補齊 / 自動完成 [Tab] 和 [Shift-Tab]
     set show-all-if-ambiguous on
 #bind shell keys
-    bind "\C-x":shell-kill-word
+    bind "\C-v":shell-kill-word
     bind "\C-f":forward-word
     bind "\C-b":backward-word
-
 fi
 
 
@@ -138,6 +139,8 @@ alias countall='ls -lR| grep "^-" | wc -l'
 alias countdir='ls -lR | grep "^d" | wc -l'
 alias countline='wc -wcl'
 
+alias xopen='xdg-open'
+alias manim-docker-run='docker run --rm -it  --user="$(id -u):$(id -g)" -v "$(pwd)":/manim manimcommunity/manim manim '
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -192,3 +195,6 @@ export PATH="/localdata/bin:/localdata/bin/node/bin:/localdata/bin/go/bin:/local
 if which tmux 2>&1 >/dev/null; then
     test -z "$TMUX" && (tmux attach)
 fi
+
+# Add this line at the end of .bashrc:
+[[ ${BLE_VERSION-}  ]] && ble-attach
