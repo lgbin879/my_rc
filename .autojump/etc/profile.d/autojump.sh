@@ -17,6 +17,10 @@ if [ "${shell}" = "sh" ]; then
     return 0
 
 # check local install
+elif [ -s ~/.vim/.autojump/share/autojump/autojump.${shell} ]; then
+    source ~/.vim/.autojump/share/autojump/autojump.${shell}
+
+# check local install
 elif [ -s ~/.autojump/share/autojump/autojump.${shell} ]; then
     source ~/.autojump/share/autojump/autojump.${shell}
 
