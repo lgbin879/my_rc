@@ -189,7 +189,7 @@ export EDITOR="$VISUAL"
 . "$HOME/.cargo/env" #rust
 export PATH="/localdata/bin:/localdata/bin/node/bin:/localdata/bin/go/bin:/localdata/bin/dotnet:/localdata/bin/redis:/localdata/bin/allure/bin:/home/ligb/bin/:/home/ligb/bin/cmake-3.22.0-rc1-linux-x86_64/bin:/localdata/bin/allure/bin:/localdata/bin/yasm-1.3.0:/localdata/bin/ffmpeg-3.1:/home/ligb/.pyenv/bin:$PATH"
 
-[[ -s /home/ligb/.autojump/etc/profile.d/autojump.sh ]] && source /home/ligb/.autojump/etc/profile.d/autojump.sh
+[[ -s /home/ligb/.vim/.autojump/etc/profile.d/autojump.sh ]] && source /home/ligb/.vim/.autojump/etc/profile.d/autojump.sh
 
 # 判断是否已有开启的tmux会话
 if which tmux 2>&1 >/dev/null; then

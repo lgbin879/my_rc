@@ -22,6 +22,40 @@ snippet docs
 	Description: ${0}
 	"""
 
+snippet manimfile
+	#!/usr/bin/env python3
+
+	"""
+	Author: Guibin Li
+	Email: guibinli@gmail.com
+	Github: lgbin879
+	Description: 
+	"""
+
+	from manim import *
+
+	class ${1:ClassName}(Scene):
+		"""${2:docstring for $1}"""
+		def construct(self):
+			## Make objects
+
+			## Set positions
+
+			## Show objects
+			${0}
+
+# manim class
+snippet clm
+	class ${1:ClassName}(Scene):
+		"""${2:docstring for $1}"""
+		def construct(self):
+			## Make objects
+			${0}
+
+			## Set positions
+
+			## Show objects
+
 # Unittest skip
 snippet sk "skip unittests" b
 	@unittest.skip(${1:skip_reason})
