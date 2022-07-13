@@ -15,4 +15,6 @@ cp .vim/.tmux.conf ~/.tmux.conf
 
 cp -r .vim/.autojump/ ~/
 
+source ~/.bashrc
+
 ## Done
