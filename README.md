@@ -12,4 +12,6 @@ cp .vim/.vimrc ~/.vimrc
 
 cp .vim/.bashrc ~/.bashrc
 
+cp -r .vim/.autojump/ ~/
+
 ## Done
