@@ -18,3 +18,13 @@ cp -r .vim/.autojump/ ~/
 source ~/.bashrc
 
 ## Done
+
+## use autojump
+$ ~ > j -s
+________________________________________
+
+0:       total weight
+0:       number of entries
+0.00:    current directory weight
+
+data:    /home/ligb/.local/share/autojump/autojump.txt
