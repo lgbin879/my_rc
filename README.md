@@ -19,6 +19,14 @@ source ~/.bashrc
 
 ## Done
 
+## use ctags.sh
+
+cp .vim/ctags.sh PROJECT_FOLDER
+
+cd PROJECT_FOLDER
+
+sh ctags.sh
+
 ## use autojump
 $ ~ > j -s
 ________________________________________
